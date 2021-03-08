@@ -1,0 +1,36 @@
+body {
+  background-image: url("../images/background.jpg"); /* Using given URL for background image. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-main {
+  padding: 5px;
+  justify-content: center;
+  margin: 10px;
+  width: 100px;
+  background-color: gold;
+}
+
+#create-post-btn { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#create-post-btn button {
+  padding: 5px 10px;
+  margin: 10px 5px;
+  width: 90px;
+  background-color: #00cc00;
+  color: white;
+  border: none;
+}
