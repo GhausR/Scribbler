@@ -1,9 +1,9 @@
-// Function to open the Create Post modal
+// function to open create post modal
 function openCreatePostModal() {
   document.getElementById("create-post-modal").style.display = "block";
 }
 
-// Function to close the Create Post modal
+// function to close create post modal
 function closeCreatePostModal() {
   document.getElementById("create-post-modal").style.display = "none";
 }

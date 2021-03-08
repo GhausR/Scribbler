@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/background.jpg"); /* Using given URL for background image. */
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,7 +20,7 @@ main {
   background-color: gold;
 }
 
-#create-post-btn { 
+#create-post-btn {
   width: 100%;
   display: flex;
   justify-content: center;

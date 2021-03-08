@@ -1,43 +1,44 @@
-// Function that opens the Sign Up modal
+// Function to open Sign Up modal
 function openSignUpModal() {
   document.getElementById("signin-modal").style.display = "none";
   document.getElementById("signup-modal").style.display = "block";
 }
 
-// Function that closes the Sign Up modal
+// Function to close Sign Up modal
 function closeSignUpModal() {
   document.getElementById("signup-modal").style.display = "none";
   let elements = document.querySelectorAll(".errortext");
   let triangles = document.querySelectorAll(".triangle");
 
-  // Hide the error messages on closing the modals
+  // hiding error messages on closing the modal:
   for (let i = 0; i < 6; i++) {
     elements[i].style.visibility = "hidden";
     triangles[i].style.visibility = "hidden";
   }
 }
 
-// Function that opens up the Sign In modal
+// function to open Sign In modal
 function openSignInModal() {
   document.getElementById("signup-modal").style.display = "none";
   document.getElementById("signin-modal").style.display = "block";
 }
 
-// Function that closes the Sign In modal
+// function to close Sign In modal
 function closeSignInModal() {
   document.getElementById("signin-modal").style.display = "none";
 
   let elements = document.querySelectorAll(".errortext");
   let triangles = document.querySelectorAll(".triangle");
 
-  // Hide error messages on closing the modals.
+  // hiding error messages on closing the modal:
   for (let i = 0; i < 6; i++) {
     elements[i].style.visibility = "hidden";
     triangles[i].style.visibility = "hidden";
   }
 }
 
-// Fucntion to create the Submit button finctionality on the Sign Up modal. Also, checks if all the fields are filled and displays the required error messages. 
+// submit button functionality on sign up modal
+// checks if the fields have been filled, and displays error messages if required
 function signUpSubmit() {
   let formElement = document.getElementById("name").value;
   let count = 0;
@@ -72,13 +73,13 @@ function signUpSubmit() {
     document.getElementsByClassName("triangle")[3].style.visibility = "visible";
   }
 
-  // Close the modal if all the fields are filled
+  // close the modal if all entries are filled:
   if (count === 0) {
     document.getElementById("signup-modal").style.display = "none";
     let elements = document.querySelectorAll(".errortext");
     let triangles = document.querySelectorAll(".triangle");
 
-    // Hide all error messages.
+    // hide error messages:
     for (let i = 0; i < 4; i++) {
       elements[i].style.visibility = "hidden";
       triangles[i].style.visibility = "hidden";
@@ -86,7 +87,8 @@ function signUpSubmit() {
   }
 }
 
-// Fucntion to create the Submit button finctionality on the Sign In modal. Also, checks if all the fields are filled and displays the required error messages. 
+// submit button functionality on sign up modal
+// checks if the fields have been filled, and displays error messages if required
 function signInSubmit() {
   let formElement = document.getElementById("username2").value;
   let count = 0;
@@ -107,13 +109,13 @@ function signInSubmit() {
     document.getElementsByClassName("triangle")[5].style.visibility = "visible";
   }
 
-  // Close the modal if all the fields are filled.
+  // close the modal if all entries are filled:
   if (count === 0) {
     document.getElementById("signin-modal").style.display = "none";
     let elements = document.querySelectorAll(".errortext");
     let triangles = document.querySelectorAll(".triangle");
 
-    // Hide all error messages
+    // hide error messages:
     for (let i = 4; i < 6; i++) {
       elements[i].style.visibility = "hidden";
       triangles[i].style.visibility = "hidden";
